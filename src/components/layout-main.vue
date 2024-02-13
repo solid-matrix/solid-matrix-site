@@ -55,7 +55,7 @@ h1 {
 }
 
 nav {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 
     ul {
         display: flex;
@@ -63,7 +63,7 @@ nav {
         a {
             color: inherit;
             display: block;
-            padding: 0 1rem;
+            padding: 0 0.5rem;
         }
 
         a:hover {
