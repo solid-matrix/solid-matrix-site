@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <h2>Home</h2>
+  <h2>主页</h2>
   <article>
     <p>...</p>
     <p>To be implemented.</p>

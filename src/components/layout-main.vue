@@ -5,16 +5,16 @@
             <nav>
                 <ul>
                     <li>
-                        <RouterLink :to="{ name: 'home' }">主页</RouterLink>
+                        <router-link :to="{ name: 'home' }">主页</router-link>
                     </li>
                     <li>
-                        <RouterLink :to="{ name: 'articles' }">日志</RouterLink>
+                        <router-link :to="{ name: 'articles' }">日志</router-link>
                     </li>
                     <li>
-                        <RouterLink :to="{ name: 'projects' }">项目</RouterLink>
+                        <router-link :to="{ name: 'projects' }">项目</router-link>
                     </li>
                     <li>
-                        <RouterLink :to="{ name: 'resources' }">资源</RouterLink>
+                        <router-link :to="{ name: 'resources' }">资源</router-link>
                     </li>
                 </ul>
             </nav>
@@ -61,6 +61,7 @@ nav {
         display: flex;
 
         a {
+            color: inherit;
             display: block;
             padding: 0 1rem;
         }
@@ -78,6 +79,7 @@ footer {
     color: var(--color-dark-text);
     padding-top: 2rem;
     padding-bottom: 1rem;
+    margin-top: 2rem;
 
     .copyright {
         border-top: 1px solid var(--color-grey-default);
