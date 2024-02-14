@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="container header-content">
-            <h1>SolidMatrix</h1>
+            <div><b>SolidMatrix</b></div>
             <nav>
                 <ul>
                     <li>
@@ -46,14 +46,6 @@ header {
     }
 }
 
-h1 {
-    font-size: inherit;
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    user-select: none;
-}
-
 nav {
     padding: 0 0.5rem;
 
@@ -79,7 +71,6 @@ footer {
     color: var(--color-dark-text);
     padding-top: 2rem;
     padding-bottom: 1rem;
-    margin-top: 2rem;
 
     .copyright {
         border-top: 1px solid var(--color-grey-default);
@@ -87,5 +78,8 @@ footer {
     }
 }
 
-main {}
+main {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 </style>

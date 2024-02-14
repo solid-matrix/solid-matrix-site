@@ -15,7 +15,7 @@ watch(() => route.params.name, (newName) => name.value = newName as string)
 </script>
 
 <template>
-    <h2>{{ article.title }}</h2>
+    <h1>{{ article.title }}</h1>
     <article>
         <article-component />
     </article>

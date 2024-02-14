@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <h2>主页</h2>
+  <h1>主页</h1>
   <article>
     <p>...</p>
     <p>To be implemented.</p>

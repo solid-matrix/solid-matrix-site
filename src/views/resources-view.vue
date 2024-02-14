@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <h2>资源</h2>
+  <h1>资源</h1>
   <article>
     <p>...</p>
     <p>To be implemented.</p>

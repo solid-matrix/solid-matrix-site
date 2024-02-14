@@ -4,7 +4,7 @@ import ArticleLink from '@/components/article-link.vue';
 </script>
 
 <template>
-  <h2>项目</h2>
+  <h1>项目</h1>
   <ul>
     <li><article-link name="solid-blazor" /></li>
   </ul>
