@@ -1,7 +1,5 @@
-<script setup lang="ts">
-import '@/assets/main.scss'
+<script setup lang="ts"></script>
 
-</script>
 <template>
     <nuxt-layout >
       <nuxt-page />

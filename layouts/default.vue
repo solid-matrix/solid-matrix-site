@@ -34,7 +34,15 @@
         </div>
     </footer>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
+
+.container {
+    max-width: var(--size-container-max-width);
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 header {
     font-size: 1rem;
     line-height: 3rem;
