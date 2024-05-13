@@ -11,10 +11,10 @@
                         <nuxt-link to="/articles">日志</nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link to="projects">项目</nuxt-link>
+                        <nuxt-link to="/projects">项目</nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link to="resources">资源</nuxt-link>
+                        <nuxt-link to="/resources">资源</nuxt-link>
                     </li>
                 </ul>
             </nav>
