@@ -1,0 +1,167 @@
+:root {
+    --color-black: rgba(17, 14, 45, 1);
+    --color-white: rgba(255, 255, 255, 1);
+    --color-grey-default: #9E9E9E;
+    --color-grey-light: #e8e8e8;
+    --color-grey-lighter: #f9f9f9;
+    --color-grey-dark: #757575;
+    --color-grey-darker: #616161;
+
+    --color-primary: rgb(49, 120, 198, 1);
+    --color-primary-text: rgba(255, 255, 255, 1);
+    --color-primary-darken: rgb(36, 89, 145);
+    --color-primary-lighten: rgb(87, 152, 221);
+    --color-primary-hover: rgba(89, 74, 226, 0.058823529411764705);
+
+    --color-secondary: rgba(255, 64, 129, 1);
+    --color-secondary-text: rgba(255, 255, 255, 1);
+    --color-secondary-darken: rgb(255, 31, 105);
+    --color-secondary-lighten: rgb(255, 102, 153);
+    --color-secondary-hover: rgba(255, 64, 129, 0.058823529411764705);
+
+    --color-tertiary: rgba(30, 200, 165, 1);
+    --color-tertiary-text: rgba(255, 255, 255, 1);
+    --color-tertiary-darken: rgb(25, 169, 140);
+    --color-tertiary-lighten: rgb(42, 223, 187);
+    --color-tertiary-hover: rgba(30, 200, 165, 0.058823529411764705);
+
+    --color-info: rgba(33, 150, 243, 1);
+    --color-info-text: rgba(255, 255, 255, 1);
+    --color-info-darken: rgb(12, 128, 223);
+    --color-info-lighten: rgb(71, 167, 245);
+    --color-info-hover: rgba(33, 150, 243, 0.058823529411764705);
+
+    --color-success: rgba(0, 200, 83, 1);
+    --color-success-text: rgba(255, 255, 255, 1);
+    --color-success-darken: rgb(0, 163, 68);
+    --color-success-lighten: rgb(0, 235, 98);
+    --color-success-hover: rgba(0, 200, 83, 0.058823529411764705);
+
+    --color-warning: rgba(255, 152, 0, 1);
+    --color-warning-text: rgba(255, 255, 255, 1);
+    --color-warning-darken: rgb(214, 129, 0);
+    --color-warning-lighten: rgb(255, 167, 36);
+    --color-warning-hover: rgba(255, 152, 0, 0.058823529411764705);
+
+    --color-error: rgba(244, 67, 54, 1);
+    --color-error-text: rgba(255, 255, 255, 1);
+    --color-error-darken: rgb(242, 28, 13);
+    --color-error-lighten: rgb(246, 96, 85);
+    --color-error-hover: rgba(244, 67, 54, 0.058823529411764705);
+
+    --color-dark: rgba(66, 66, 66, 1);
+    --color-dark-text: rgba(255, 255, 255, 1);
+    --color-dark-darken: rgb(46, 46, 46);
+    --color-dark-lighten: rgb(87, 87, 87);
+    --color-dark-hover: rgba(66, 66, 66, 0.058823529411764705);
+
+    --color-text-primary: rgba(66, 66, 66, 1);
+    --color-text-secondary: rgba(0, 0, 0, 0.5372549019607843);
+    --color-text-disabled: rgba(0, 0, 0, 0.3764705882352941);
+
+    --color-action-default: rgba(0, 0, 0, 0.5372549019607843);
+    --color-action-default-hover: rgba(0, 0, 0, 0.058823529411764705);
+    --color-action-disabled: rgba(0, 0, 0, 0.25882352941176473);
+    --color-action-disabled-background: rgba(0, 0, 0, 0.11764705882352941);
+
+    --color-background: rgba(255, 255, 255, 1);
+    --color-background-grey: rgba(245, 245, 245, 1);
+
+    --color-lines-default: rgba(0, 0, 0, 0.11764705882352941);
+    --color-lines-inputs: rgba(189, 189, 189, 1);
+
+    --color-overlay-dark: rgba(33, 33, 33, 0.4980392156862745);
+    --color-overlay-light: rgba(255, 255, 255, 0.4980392156862745);
+
+
+    --typography-default-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --typography-default-size: 0.875rem;
+    --typography-default-weight: 400;
+    --typography-default-lineheight: 1.75rem;
+    --typography-default-letterspacing: .01071em;
+    --typography-default-text-transform: none;
+
+    --typography-h1-family: var(--typography-default-family);
+    --typography-h1-size: 6rem;
+    --typography-h1-weight: 300;
+    --typography-h1-lineheight: 1.167;
+    --typography-h1-letterspacing: -.01562em;
+    --typography-h1-text-transform: none;
+    --typography-h2-family: var(--typography-default-family);
+    --typography-h2-size: 3.75rem;
+    --typography-h2-weight: 300;
+    --typography-h2-lineheight: 1.2;
+    --typography-h2-letterspacing: -.00833em;
+    --typography-h2-text-transform: none;
+    --typography-h3-family: var(--typography-default-family);
+    --typography-h3-size: 3rem;
+    --typography-h3-weight: 400;
+    --typography-h3-lineheight: 1.167;
+    --typography-h3-letterspacing: 0;
+    --typography-h3-text-transform: none;
+    --typography-h4-family: var(--typography-default-family);
+    --typography-h4-size: 2.125rem;
+    --typography-h4-weight: 400;
+    --typography-h4-lineheight: 1.235;
+    --typography-h4-letterspacing: .00735em;
+    --typography-h4-text-transform: none;
+    --typography-h5-family: var(--typography-default-family);
+    --typography-h5-size: 1.5rem;
+    --typography-h5-weight: 400;
+    --typography-h5-lineheight: 1.334;
+    --typography-h5-letterspacing: 0;
+    --typography-h5-text-transform: none;
+    --typography-h6-family: var(--typography-default-family);
+    --typography-h6-size: 1.25rem;
+    --typography-h6-weight: 500;
+    --typography-h6-lineheight: 1.6;
+    --typography-h6-letterspacing: .0075em;
+    --typography-h6-text-transform: none;
+    --typography-subtitle1-family: var(--typography-default-family);
+    --typography-subtitle1-size: 1rem;
+    --typography-subtitle1-weight: 400;
+    --typography-subtitle1-lineheight: 1.75;
+    --typography-subtitle1-letterspacing: .00938em;
+    --typography-subtitle1-text-transform: none;
+    --typography-subtitle2-family: var(--typography-default-family);
+    --typography-subtitle2-size: .875rem;
+    --typography-subtitle2-weight: 500;
+    --typography-subtitle2-lineheight: 1.57;
+    --typography-subtitle2-letterspacing: .00714em;
+    --typography-subtitle2-text-transform: none;
+    --typography-body1-family: var(--typography-default-family);
+    --typography-body1-size: 1rem;
+    --typography-body1-weight: 400;
+    --typography-body1-lineheight: 1.5;
+    --typography-body1-letterspacing: .00938em;
+    --typography-body1-text-transform: none;
+    --typography-body2-family: var(--typography-default-family);
+    --typography-body2-size: .875rem;
+    --typography-body2-weight: 400;
+    --typography-body2-lineheight: 1.43;
+    --typography-body2-letterspacing: .01071em;
+    --typography-body2-text-transform: none;
+
+    --typography-button-family: var(--typography-default-family);
+    --typography-button-size: .875em;
+    --typography-button-weight: 500;
+    --typography-button-lineheight: 1.75;
+    --typography-button-letterspacing: .02857em;
+    --typography-button-text-transform: uppercase;
+
+    --typography-caption-family: var(--typography-default-family);
+    --typography-caption-size: .75rem;
+    --typography-caption-weight: 400;
+    --typography-caption-lineheight: 1.66;
+    --typography-caption-letterspacing: .03333em;
+    --typography-caption-text-transform: none;
+    --typography-overline-family: var(--typography-default-family);
+    --typography-overline-size: .75rem;
+    --typography-overline-weight: 400;
+    --typography-overline-lineheight: 2.66;
+    --typography-overline-letterspacing: .08333em;
+    --typography-overline-text-transform: none;
+
+
+    --size-container-max-width: 1024px;
+}
