@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <h1>主页</h1>
+  <h1>SolidMatrix</h1>
   <article>
     <p>...</p>
     <p>To be implemented.</p>

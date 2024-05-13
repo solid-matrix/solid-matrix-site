@@ -38,7 +38,7 @@ addArticle({
 
 addArticle({
     name: 'normal-ui',
-    title: 'Normal UI',
+    title: '[Draft] Normal UI',
     tags: ['ui',],
     author: 'solid-matrix',
     component: () => import('./articles/normal-ui.vue')

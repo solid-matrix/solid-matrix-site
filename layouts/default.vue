@@ -1,49 +1,56 @@
 <template>
-    <header>
-        <div class="container header-content">
-            <div><b>SolidMatrix</b></div>
-            <nav>
-                <ul>
-                    <li>
-                        <nuxt-link to="/">主页</nuxt-link>
-                    </li>
-                    <li>
-                        <nuxt-link to="/articles">日志</nuxt-link>
-                    </li>
-                    <li>
-                        <nuxt-link to="/projects">项目</nuxt-link>
-                    </li>
-                    <li>
-                        <nuxt-link to="/resources">资源</nuxt-link>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main class="container">
-        <slot></slot>
-    </main>
-    <footer>
-        <div class="container">
-            <p>
-                <strong>SolidMatrix</strong>
-            </p>
-            <p class="copyright">
-                Copyright © solid-matrix.com All Rights Reserved.
-            </p>
-        </div>
-    </footer>
+    <div id="layout">
+        <header>
+            <div class="container header-content">
+                <div><b>SolidMatrix</b></div>
+                <nav>
+                    <ul>
+                        <li>
+                            <nuxt-link to="/">主页</nuxt-link>
+                        </li>
+                        <li>
+                            <nuxt-link to="/articles">日志</nuxt-link>
+                        </li>
+                        <li>
+                            <nuxt-link to="/projects">项目</nuxt-link>
+                        </li>
+                        <li>
+                            <nuxt-link to="/resources">资源</nuxt-link>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="container">
+            <slot></slot>
+        </main>
+        <footer>
+            <div class="container">
+                <p>
+                    <strong>SolidMatrix</strong>
+                </p>
+                <p class="copyright">
+                    Copyright © solid-matrix.com All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
 </template>
 <style lang="scss" scoped>
 
-.container {
-    max-width: var(--size-container-max-width);
-    margin: 0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+#layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 100vw;
+    height: 100vh;
 }
 
 header {
+    flex: 0 0 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
     font-size: 1rem;
     line-height: 3rem;
     background-color: var(--color-primary);
@@ -73,6 +80,10 @@ nav {
 }
 
 footer {
+    flex: 0 0 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
     font-size: 1rem;
     line-height: 2rem;
     background-color: var(--color-dark);
@@ -87,6 +98,10 @@ footer {
 }
 
 main {
+    flex: 1 1 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
