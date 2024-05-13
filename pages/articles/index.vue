@@ -9,6 +9,9 @@ import ArticleLink from '@/components/article-link.vue';
     <li>
       <article-link name="blazor-hybrid-app-dev" />
     </li>
+    <li>
+      <article-link name="normal-ui" />
+    </li>
   </ul>
 </template>
 

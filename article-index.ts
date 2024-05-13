@@ -35,3 +35,11 @@ addArticle({
     author: 'solid-matrix',
     component: () => import('./articles/solid-blazor.vue')
 })
+
+addArticle({
+    name: 'normal-ui',
+    title: 'Normal UI',
+    tags: ['ui',],
+    author: 'solid-matrix',
+    component: () => import('./articles/normal-ui.vue')
+})

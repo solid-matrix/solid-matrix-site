@@ -1,0 +1,3 @@
+<template>
+    Normal UI
+</template>
