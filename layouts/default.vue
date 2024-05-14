@@ -1,56 +1,50 @@
 <template>
-    <div id="layout">
-        <header>
-            <div class="container header-content">
-                <div><b>SolidMatrix</b></div>
-                <nav>
-                    <ul>
-                        <li>
-                            <nuxt-link to="/">主页</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/articles">日志</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/projects">项目</nuxt-link>
-                        </li>
-                        <li>
-                            <nuxt-link to="/resources">资源</nuxt-link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main class="container">
+    <header>
+        <div class="container header-content">
+            <div><b>SolidMatrix</b></div>
+            <nav>
+                <ul>
+                    <li>
+                        <nuxt-link to="/">主页</nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="/articles">日志</nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="/projects">项目</nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="/resources">资源</nuxt-link>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
             <slot></slot>
-        </main>
-        <footer>
-            <div class="container">
-                <p>
-                    <strong>SolidMatrix</strong>
-                </p>
-                <p class="copyright">
-                    Copyright © solid-matrix.com All Rights Reserved.
-                </p>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>
+                <strong>SolidMatrix</strong>
+            </p>
+            <p class="copyright">
+                Copyright © solid-matrix.com All Rights Reserved.
+            </p>
+        </div>
+    </footer>
 </template>
 <style lang="scss" scoped>
-
-#layout{
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    width: 100vw;
-    height: 100vh;
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    max-width: var(--size-container-max-width);
 }
 
 header {
-    flex: 0 0 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
     font-size: 1rem;
     line-height: 3rem;
     background-color: var(--color-primary);
@@ -60,6 +54,27 @@ header {
         display: flex;
     }
 }
+
+main {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer {
+    font-size: 1rem;
+    line-height: 2rem;
+    background-color: var(--color-dark);
+    color: var(--color-dark-text);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+    .copyright {
+        border-top: 1px solid var(--color-grey-default);
+        color: var(--color-grey-default);
+    }
+}
+
+
 
 nav {
     padding: 0 0.5rem;
@@ -77,32 +92,5 @@ nav {
             background-color: var(--color-primary-darken);
         }
     }
-}
-
-footer {
-    flex: 0 0 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    font-size: 1rem;
-    line-height: 2rem;
-    background-color: var(--color-dark);
-    color: var(--color-dark-text);
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-
-    .copyright {
-        border-top: 1px solid var(--color-grey-default);
-        color: var(--color-grey-default);
-    }
-}
-
-main {
-    flex: 1 1 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 </style>

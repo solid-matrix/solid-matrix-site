@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import ArticleLink from '@/components/article-link.vue';
-
+const { data: articles } = await useAsyncData('home', () => queryContent('/articles').find())
 </script>
 
 <template>
   <h1>日志</h1>
   <ul>
-    <li>
-      <article-link name="blazor-hybrid-app-dev" />
-    </li>
-    <li>
-      <article-link name="normal-ui" />
+    <li v-for="article in articles">
+      <nuxt-link :to="article._path">
+
+        {{ article.navigation.title }}
+      </nuxt-link>
+      <span style="color:gray; font-style: italic; padding: 0 0.5em;"> By {{ article.navigation.author }}</span>
     </li>
   </ul>
 </template>

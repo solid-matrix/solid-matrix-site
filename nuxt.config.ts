@@ -1,7 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
+
   css: ['~/assets/main.scss'],
+
   app: {
     head: {
       title: "SolidMatrix",
@@ -13,5 +15,13 @@ export default defineNuxtConfig({
         }
       ]
     }
-  }
+  },
+
+  content: {
+    navigation: {
+      fields: ['author', 'publishedAt', 'tags']
+    }
+  },
+
+  modules: ["@nuxt/content"]
 })
