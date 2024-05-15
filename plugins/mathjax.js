@@ -11,7 +11,7 @@ export default defineNuxtPlugin((nuxtApp) => {
 
         (function () {
             var script = document.createElement('script');
-            script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
+            script.src = 'https://unpkg.com/mathjax@3.2.2/es5/tex-svg.js';
             script.async = true;
             document.head.appendChild(script);
         })();
