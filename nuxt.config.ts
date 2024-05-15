@@ -6,7 +6,6 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "SolidMatrix",
       link: [
         {
           rel: "icon",
@@ -18,10 +17,11 @@ export default defineNuxtConfig({
   },
 
   content: {
-    navigation: {
-      fields: ['author', 'publishedAt', 'tags']
-    }
+    contentHead: true,
+    markdown: {},
   },
 
-  modules: ["@nuxt/content"]
+  modules: ["@nuxt/content"],
+
+  plugins: ['~/plugins/mathjax'],
 })

@@ -6,9 +6,9 @@ const { data: projects } = await useAsyncData('home', () => queryContent('/proje
 <template>
   <h1>项目</h1>
   <ul>
-    <li v-for="article in projects">
-      <nuxt-link :to="article._path">
-        {{ article.title }}
+    <li v-for="project in projects">
+      <nuxt-link :to="project._path">
+        {{ project.title }}
       </nuxt-link>
     </li>
   </ul>

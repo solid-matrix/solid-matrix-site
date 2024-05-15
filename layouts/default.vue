@@ -1,11 +1,10 @@
 <template>
     <header>
         <div class="container header-content">
-            <div><b>SolidMatrix</b></div>
             <nav>
                 <ul>
                     <li>
-                        <nuxt-link to="/">主页</nuxt-link>
+                        <nuxt-link to="/"><b>SolidMatrix</b></nuxt-link>
                     </li>
                     <li>
                         <nuxt-link to="/articles">日志</nuxt-link>
@@ -37,7 +36,7 @@
     </footer>
 </template>
 <style lang="scss" scoped>
-.container{
+.container {
     padding-left: 1rem;
     padding-right: 1rem;
     margin: 0 auto;
