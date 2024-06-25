@@ -5,7 +5,7 @@ const notifyPermit = ref(false);
 let registration:ServiceWorkerRegistration;
 
 onMounted(async () => {
-    navigator.serviceWorker.register('/sw.js');
+    navigator.serviceWorker.register('/hello-sw.js');
 
     const res = await Notification.requestPermission();
     if (res === 'granted') {
